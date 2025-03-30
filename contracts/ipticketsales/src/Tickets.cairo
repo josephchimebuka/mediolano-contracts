@@ -1,4 +1,9 @@
 #[starknet::contract]
+
+ use starknet::storage::{
+        Map, StoragePathEntry, StoragePointerReadAccess, StoragePointerWriteAccess, MutableVecTrait,
+        Vec, VecTrait,
+    };
  use starknet::{
         ContractAddress, get_block_timestamp, get_caller_address, contract_address_const,
         get_contract_address
